@@ -1,0 +1,46 @@
+/** Text colors **/
+$primary-text: #313942;
+$extra-light-primary-text: #defaca;
+
+$white: white;
+$white-grey: #cdcecb;
+$inactive-white-grey: #879b93;
+
+$violet-text: #5c51e0;
+
+.primary-text {
+  color: $primary-text;
+}
+
+.white-text {
+  color: $white;
+}
+
+.white-grey-text {
+  color: $white-grey;
+}
+
+.violet-text {
+  color: $violet-text;
+}
+
+.extra-light-primary-text {
+  color: $extra-light-primary-text;
+}
+
+/** Background colors **/
+$dark-green-bg: #0e231c;
+$dark-white-green-bg: #28332f;
+$light-green-bg: #f4f7f2;
+
+.dark-green-bg {
+  background-color: $dark-green-bg;
+}
+
+.dark-white-green-bg {
+  background-color: $dark-white-green-bg;
+}
+
+.light-green-bg {
+  background-color: $light-green-bg;
+}

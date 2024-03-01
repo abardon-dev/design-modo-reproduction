@@ -1,0 +1,103 @@
+@use './styles/buttons.scss';
+@use './styles/colors.scss';
+
+:root {
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root:focus-within {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh; /** For browser compatibility if svh is not supported **/
+  min-height: 100svh; /** For mobile issue with 100vh and 100dvh **/
+  max-width: 100%;
+
+  font-family:
+    'Oxygen',
+    Segoe UI,
+    Helvetica,
+    Arial,
+    sans-serif;
+  line-height: 1.5;
+  color: #313942;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+dd {
+  list-style: none; //Remove bullet list-style (<li> for example)
+}
+
+/* Responsive Images */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/** Typography **/
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: bold;
+}
+
+a,
+button {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+$dark-green-bg: #0e231c;
+$light-green-bg: #f4f7f2;
+
+.dark-green-bg {
+  color: $dark-green-bg;
+}
